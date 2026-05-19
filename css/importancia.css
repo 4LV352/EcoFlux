@@ -1,0 +1,413 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    user-select: none;
+
+}
+
+:root {
+    --nav: #85b31c;
+    --segundario: #6CA133;
+    --hero-h1: #3A7D44;
+    --hero-h2: #6FBF73;
+    --title: #2f6d3a;
+    --text: rgba(0, 0, 0);
+
+    --shadow: rgba(0, 0, 0, 0.2);
+
+}
+
+/* barra de navegação */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 24px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav h1 {
+    color: var(--segundario);
+
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 0;
+}
+
+.lado {
+
+
+    font-size: 15px;
+    color: #357DA3;
+    margin: 0px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    color: var(--segundario);
+    text-decoration: none;
+    transition: 1s;
+}
+
+.menu li a:hover {
+    color: var(--nav);
+    border-bottom: 1px solid var(--nav);
+}
+
+
+/* main */
+
+main {
+    max-width: 1200px;
+    padding: 18px 24px;
+    margin: auto;
+}
+
+/* header */
+.cabecalho {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    /* borda */
+    border-bottom: 1px solid var(--shadow);
+    border-radius: 30px;
+    box-shadow: -3.9px 7px 0px -5px var(--shadow);
+
+}
+
+.bloco-texto {
+    margin: auto 0;
+}
+
+.conteudo-texto {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--title);
+}
+
+.hr {
+    display: block;
+    background-color: var(--title);
+    height: 1px;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.bloco-texto p {
+    margin-top: 10px;
+    width: 250px;
+}
+
+
+/* section energias */
+
+.energias {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* energia renovavel */
+.energiaR {
+    padding: 25px;
+    border-radius: 20px;
+    background-color: #f5f8ef;
+    border: 1px solid #bcc4ad;
+}
+
+.tituloRe {
+    color: #2e7d32;
+    width: 375px;
+}
+
+.tituloRe p {
+    margin-top: 10px;
+    width: 390px;
+    color: black;
+}
+
+.exR {
+    color: #2e7d32;
+}
+
+.box-lista {
+    margin-top: 20px;
+}
+
+.lista-exemplos {
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+    gap: 60px;
+
+    text-align: center;
+}
+
+.icone-circulo {
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    border: 1px solid var(--segundario);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.icone-circulo i {
+    font-size: 30px;
+    background-color: #fff;
+    color: var(--hero-h2)
+}
+
+.linhaR {
+    height: 2px;
+    margin: 20px 0px;
+    background-color: #82a853;
+
+}
+
+.tituloR {
+    color: #2e7d32;
+}
+
+.lista-vantagens {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.lista-vantagens li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.lista-vantagens li i {
+    color: #28a745;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* energia nao renovavel */
+
+.energiaNR {
+    padding: 25px;
+    border-radius: 20px;
+    background-color: #fff5f4;
+    border: 1px solid #e5b893;
+}
+
+.tituloNRe {
+    color: #E67E22;
+    width: 375px;
+}
+
+.tituloNRe p {
+    margin-top: 10px;
+    width: 390px;
+    color: black;
+}
+
+.exNR {
+    color: #E67E22;
+}
+
+.icone-circuloNR {
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    border: 1px solid #E67E22;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.icone-circuloNR i {
+    font-size: 30px;
+    color: #E67E22;
+}
+
+.linhaNR {
+    height: 2px;
+    margin: 20px 0px;
+    background-color: #E67E22;
+}
+
+.lista-desvantagens {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.lista-desvantagens li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.lista-desvantagens li i {
+    color: #c05618;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* infos */
+
+.infos {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 30px;
+    border: 2px solid #e9ebea;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerINFO {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.headerINFO h1 {
+    display: flex;
+    align-items: center;
+    color: #2f6d3a;
+    font-size: 25px;
+    min-height: 50px;
+    margin-bottom: 15px;
+}
+
+.headerINFO h1 i {
+    margin-right: 7px;
+    font-size: 35px;
+}
+
+.headerINFO p {
+    font-size: 13px;
+    padding: 0 0 15px 0;
+    border-bottom: 1px solid #ccd1c2;
+    flex-grow: 1;
+}
+
+.listINFO {
+    list-style: none;
+    width: 300px;
+    font-size: 13px;
+}
+
+.listINFO li {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.icone-circuloINFO {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    border: 1px solid #2f6d3a;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.listINFO li i {
+    font-size: 30px;
+    color: #2f6d3a;
+}
+
+/* footer */
+
+.site-footer {
+    max-width: 1200px;
+    height: 135px;
+    margin: 40px auto;
+    border-radius: 15px;
+    background-color: #f5f1e5;
+   
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+}
+
+
+
+
+.conclusao-bloco-icone {
+    background-color: #164a21;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    border-radius: 0px 15px 15px 0px;
+
+    position: relative;
+    z-index: 2;
+    box-shadow: 8px 0 25px rgba(0, 0, 0, 0.15);
+
+}
+
+.conclusao-bloco-icone i {
+    font-size: 80px;
+    color: #ffffff;
+}
+
+.conclusao-conteudo {
+    flex-grow: 1;
+    padding: 30px 40px;
+
+    background-image: url('imgs/imgFooter.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 70%;
+
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.conclusao-conteudo h2 {
+    color: #2f6d3a;
+    font-size: 22px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.conclusao-conteudo p {
+    color: #333333;
+    font-size: 15px;
+    line-height: 1.4;
+    margin: 0;
+    max-width: 55%;
+}
