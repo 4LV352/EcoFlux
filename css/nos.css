@@ -1,0 +1,186 @@
+.sobre{
+    max-width: 800px;
+    margin: 0 auto;
+
+    text-align: left;
+
+    line-height: 1.8;
+
+    font-size: 1.3rem;
+
+    color: #255e2e;
+
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+.texto{
+    max-width: 800px;        /* Limita a largura para o texto não ficar "esticado" */
+    margin: 0 auto;          /* Centraliza o bloco inteiro na página */
+    line-height: 1.6;        /* Melhora a leitura aumentando o espaço entre linhas */
+    padding: 0 20px;
+    text-align: center;
+    color: #255e2e;
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    user-select: none;
+
+}
+
+:root {
+    --nav: #85b31c;
+    --segundario: #6CA133;
+    --texto-h1: #3A7D44;
+    --hero-h2: #6FBF73;
+    --text: #5F6F65;
+
+}
+
+body {
+    background-image: url(https://github.com/4LV352/EcoFlux/blob/main/css/img/fundo-site2.png?raw=true);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;       /* Permite quebrar linha se não couber no site */
+  justify-content: center; 
+  gap: 50px;             /* Aumente aqui para separar mais os blocos */
+  padding: 60px 20px;
+  
+}
+
+.card {
+  background-color: #85b31c; /* Cor de fundo do card separado */
+  border: 2px solid #85b31c; /* Borda fina para delimitar a separação */
+  border-radius: 15px;
+  padding: 25px;
+  flex: 1;
+  min-width: 250px;      /* Garante que o card não fique fino demais */
+  max-width: 320px;
+
+   display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza a imagem */
+  text-align: center;  /* Centraliza os textos */
+}   
+
+.card img {
+  border-radius: 50px;
+  width: 120px;           /* Tamanho aproximado que discutimos antes */
+  height: auto;              /* Mantém a proporção da imagem */
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #255e2e;         /* Tom de verde escuro do seu layout */
+  font-family: sans-serif;
+}
+
+.contato-box{
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+     border: 2px solid #1d2b01af;
+}
+
+.form-contato{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-contato input,
+.form-contato textarea{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+}
+
+.form-contato button{
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #85b31c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-contato button:hover{
+    background-color: #85b31c;
+}
+
+.info-contato{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+
+/* barra de navegação */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 24px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav h1 {
+    color: var(--segundario);
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    color: var(--segundario);
+    text-decoration: none;
+    transition: 1s;
+}
+
+.menu li a:hover {
+    color: var(--nav);
+    border-bottom: 1px solid var(--nav);
+}
+
